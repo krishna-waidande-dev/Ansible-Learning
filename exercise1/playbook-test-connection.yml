@@ -1,0 +1,7 @@
+# First playbook demo
+-
+  name: Test connection to target server
+  hosts: all
+  tasks:
+    - name: Pinging to remote servers.
+      ping:
