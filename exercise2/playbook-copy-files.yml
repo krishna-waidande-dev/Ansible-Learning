@@ -1,0 +1,8 @@
+-
+  name: Copy files to target machines
+  hosts: target1, target2
+  tasks:
+    - name: Copy files to remote servers from master machine (Controller).
+      copy:
+        src: /tmp/testing.txt
+        dest: /tmp/testing1.txt
