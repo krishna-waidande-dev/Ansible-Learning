@@ -1,0 +1,15 @@
+---
+- name: Setup the HTTPD server
+  hosts: target1, target2
+  remote_user: root
+  become: true
+
+  tasks:
+   - name: Install latest version of HTTPD
+     yum:
+       name: httpd
+       state: latest
+   - name: Start the HTTPD service
+     service:
+       name: httpd
+       state: started
