@@ -1,0 +1,5 @@
+- name: Running sample script on server
+  hosts: target1, target2
+  tasks:
+    - name: Run script
+      script: hello.sh
